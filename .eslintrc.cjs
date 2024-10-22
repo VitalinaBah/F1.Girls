@@ -14,6 +14,9 @@ const config = {
         'plugin:cypress/recommended',
     ],
     settings: {
+        react: {
+            version: "detect", 
+          },
         'import/resolver': {
             node: {
                 extensions: ['.js', '.jsx'],
@@ -21,6 +24,7 @@ const config = {
             webpack: {
                 config: './config/webpack.dev.config.js',
             },
+            
         },
     },
     plugins: ['simple-import-sort', 'react'],

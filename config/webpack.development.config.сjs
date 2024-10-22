@@ -1,5 +1,5 @@
 const { merge } = require('webpack-merge');
-const basicConfig = require('./webpack.config');
+const basicConfig = require('./webpack.config.сjs');
 
 const config = {
     mode: 'development',
@@ -31,7 +31,3 @@ const config = {
 
 module.exports = merge(basicConfig, config);
 
-module.exports = {
-    mode: 'development',
-    // інші налаштування
-  };

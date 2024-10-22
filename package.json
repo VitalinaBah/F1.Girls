@@ -1,18 +1,19 @@
 {
   "name": "f1.girls",
   "version": "1.0.0",
-  "main": ".eslintrc.js",
+  "main": "App.jsx",
+  "type": "module",
   "scripts": {
-    "start": "echo \"Please provide entry file\" && exit 1",
-    "build": "webpack build -c config/webpack.production.config.js",
-    "build:dev": "webpack build -c config/webpack.development.config.js",
-    "start:dev": "webpack serve -c config/webpack.development.config.js",
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack build -c config/webpack.production.config.сjs",
+    "build:dev": "webpack build -c config/webpack.development.config.сjs",
+    "start:dev": "webpack serve -c config/webpack.development.config.сjs",
     "lint": "eslint --ignore-path .gitignore --ext .js,.jsx --max-warnings 0 ./src",
     "lint:fix": "eslint --ignore-path .gitignore --fix --ext .js,.jsx --max-warnings 0 ./src",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cypress",
     "test:open": "cypress open",
     "test:ct": "cypress run --component --browser chrome",
-    "prepare": "husky"
+    "prepare": "husky && husky install"
   },
   "keywords": [
     "React",
@@ -22,7 +23,6 @@
   "license": "ISC",
   "description": "My project",
   "dependencies": {
-    "husky": "^9.1.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.26.2",
@@ -50,6 +50,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^55.0.0",
     "html-webpack-plugin": "^5.6.0",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.10",
     "mini-css-extract-plugin": "^2.9.1",
     "prettier": "^3.3.3",

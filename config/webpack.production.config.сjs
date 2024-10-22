@@ -1,6 +1,6 @@
 const { merge } = require("webpack-merge");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const basicConfig = require("./webpack.config");
+const basicConfig = require("./webpack.config.сjs");
 
 const config = {
     mode: "production",
@@ -28,7 +28,3 @@ const config = {
 };
 
 module.exports = merge(basicConfig, config);
-module.exports = {
-    mode: 'production',
-    // інші налаштування
-  };

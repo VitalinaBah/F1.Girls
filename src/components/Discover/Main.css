@@ -1,0 +1,55 @@
+.mainContainer {
+    background-image: url('../../../assets/Discover background.png'); /* Шлях до вашого зображення */
+    background-size: cover; /* Зображення охоплює весь блок */
+    background-position: center; /* Вирівнювання по центру */
+    height: 100vh; /* Висота блоку на 100% від вікна браузера */
+    display: flex; /* Вирівнювання контейнера для блоків */
+    flex-direction: column;
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: center; /* Вирівнювання по горизонталі */
+    color: white;
+}
+
+/* Заголовок та підзаголовок */
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 200px;
+    margin-right: 900px;
+}
+
+
+/* Червоні блоки з текстом */
+.redSection {
+    width: 100%;
+    max-width: 1600px;
+    position: absolute;
+    bottom: 0;
+}
+
+.redBlock {
+    background-color: #8B0000; /* Червоний колір блоку */
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.blockTitle {
+    color: white;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 40px;
+}

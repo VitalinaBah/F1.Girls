@@ -1,27 +1,20 @@
 import React from 'react';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
-// import resizeHook from '@hooks/resize';
-// import styles from './App.css';
-// import * as styles from './App.css';
-import Header from './components/Header/Header';
+import Discover from '../src/pages/Discover';
+import Home from '../src/pages/Home'; 
+import SignUp from '../src/pages/Sign up'; 
 
-
-
-const App = () => {
-    return (
-        <div>
-            <Header />
-            <div id="tabs">
-                <menu>
-                    <button id="btn-why-react" className="active">
-                        Hello?
-                    </button>
-                </menu>
-                <div id="tab-content"></div>
-            </div>
-        </div>
-    );
-};
-
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/discover" element={<Discover />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;

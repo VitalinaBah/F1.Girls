@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 const basicConfig = {
-    entry: './src/index.js',
+    entry: path.resolve(__dirname, '../src/index.js'),
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: 'bundle.js',
@@ -33,8 +33,9 @@ const basicConfig = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.css', '.png'],
         alias: {
+            '@components': path.resolve(__dirname, '../src/components'),
             '@hooks': path.resolve(__dirname, '../src/hooks'),
         },
     },

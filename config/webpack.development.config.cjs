@@ -1,5 +1,5 @@
 const { merge } = require('webpack-merge');
-const basicConfig = require('./webpack.config.сjs');
+const basicConfig = require('./webpack.config.cjs');
 
 const config = {
     mode: 'development',
@@ -20,6 +20,13 @@ const config = {
                         },
                     },
                 ],
+            },
+             {
+                test: /\.(ico|png|jpg|jpeg|svg)$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: "assets/[name][ext]",
+                },
             },
         ],
     },

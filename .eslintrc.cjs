@@ -22,13 +22,14 @@ const config = {
                 extensions: ['.js', '.jsx'],
             },
             webpack: {
-                config: './config/webpack.dev.config.js',
+                config: './config/webpack.development.config.cjs',
             },
             
         },
+    'import/ignore': ['node_modules', '/*.js', '/*.jsx'],    
     },
     plugins: ['simple-import-sort', 'react'],
-    ignorePatterns: ['node_modules'],
+    ignorePatterns: ['node_modules'], 
     rules: {
         'unicorn/filename-case': [
             'error',

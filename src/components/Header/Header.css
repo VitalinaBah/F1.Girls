@@ -1,0 +1,81 @@
+.header {
+  position: relative;
+  height: 10vh;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  justify-content: space-between;
+  background-color: #000;
+  background: linear-gradient(to bottom, #000 0%, #330000 100%);
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity as needed */
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: relative; /* To bring content above the overlay */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; 
+}
+
+.nav {
+  display: flex; 
+}
+
+/* Додайте відступ між навігацією і значком Moon */
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 40px; /* Змінює відстань між навігаційними кнопками */
+}
+
+
+
+.themeToggle {
+  margin-left: 20px; 
+}
+
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold; /* Add this for bold text */
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff5757;
+}
+
+/* Additional styling for the dark mode icon */
+.themeToggle {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #fff;
+}

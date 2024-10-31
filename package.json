@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
-    "build": "webpack build -c config/webpack.production.config.сjs",
-    "build:dev": "webpack build -c config/webpack.development.config.сjs",
-    "start:dev": "webpack serve -c config/webpack.development.config.сjs",
+    "build": "webpack build -c config/webpack.production.config.cjs",
+    "build:dev": "webpack build -c config/webpack.development.config.cjs",
+    "start:dev": "webpack serve -c config/webpack.development.config.cjs",
     "lint": "eslint --ignore-path .gitignore --ext .js,.jsx --max-warnings 0 ./src",
     "lint:fix": "eslint --ignore-path .gitignore --fix --ext .js,.jsx --max-warnings 0 ./src",
     "test": "cypress",

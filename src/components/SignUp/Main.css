@@ -1,0 +1,50 @@
+.mainContainer {
+    background-image: url('../../../assets/background\ sign\ up.png'); /* Шлях до вашого зображення */
+    background-size: cover; /* Зображення охоплює весь блок */
+    background-position: center; /* Вирівнювання по центру */
+    height: 100vh; /* Висота блоку на 100% від вікна браузера */
+    display: flex; /* Дозволяє використовувати flexbox для центровання вмісту, якщо потрібно */
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: center; /* Вирівнювання по горизонталі */
+}
+
+.formContainer {
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent background */
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .logo {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .formContainer h1 {
+    margin-bottom: 20px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .signUpButton {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .signUpButton:hover {
+    background-color: #cc0000;
+  }

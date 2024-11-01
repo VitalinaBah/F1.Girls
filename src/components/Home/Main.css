@@ -116,6 +116,8 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
+    position:absolute;
+    
    }
 
    .rigthContainer{
@@ -124,4 +126,6 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-left: 1000px;
+    
    }

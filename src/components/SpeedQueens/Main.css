@@ -1,0 +1,53 @@
+.mainContainer{
+    background-image: url('../../../assets/speed\ queens\ background.png') ;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+}
+
+.title{
+    color: rgb(151, 12, 12);
+    margin-top: 20px;
+    font-size: 60px;
+}
+.context {
+    
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    padding: 10px;
+}
+
+.context p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 1400px; 
+    margin-bottom: 200px;
+}
+
+.learnMoreButton{
+        background-color: #880f0f;
+        color: #fff;
+        border: none;
+        padding: 15px 40px;
+        font-size: 1.2em; 
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 20px;
+        text-align: center;
+        position:absolute;
+      
+}
+.learnMoreButton:hover {
+    background-color: #f6efefc2;
+}

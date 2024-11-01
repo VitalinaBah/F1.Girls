@@ -1,27 +1,41 @@
 .mainContainer {
-    background-image: url('../../../assets/Discover background.png'); /* Шлях до вашого зображення */
-    background-size: cover; /* Зображення охоплює весь блок */
-    background-position: center; /* Вирівнювання по центру */
-    height: 100vh; /* Висота блоку на 100% від вікна браузера */
-    display: flex; /* Вирівнювання контейнера для блоків */
+    background-image: url('../../../assets/Discover background.png'); 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    display: flex; 
     flex-direction: column;
-    align-items: center; /* Вирівнювання по вертикалі */
-    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center; 
+    justify-content: center; 
     color: white;
 }
 
-/* Заголовок та підзаголовок */
+
 .content {
     text-align: center;
     margin-bottom: 20px;
+
 }
 
 .title {
-    font-size: 100px;
+    font-size: 80px;
     font-weight: bold;
-    color: red;
+    color: rgb(124, 7, 7);
+    margin-top: 50px;
+    text-align: left; /* Вирівнювання тексту вліво */
+    margin-right: 900px; /* Додаємо відступ зліва для позиціонування */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #fff;
+    opacity: 0.7;
+    text-align: left; /* Вирівнювання тексту вліво */
+    margin-right: 900px; /* Додаємо відступ зліва для вирівнювання з заголовком */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 200px;
-    margin-right: 900px;
 }
 
 
@@ -41,15 +55,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 30px;
-    color: rgb(255, 255, 255, 0.5);
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .blockTitle {
     color: white;
     font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
 }
 
-.arrow {
-    font-size: 40px;
+.arrowContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
+
+.arrow{
+    width: 30px;
+    height: 30px;
+}
+.arrow-link:hover {
+    transform: scale(1.2); 
+}
+

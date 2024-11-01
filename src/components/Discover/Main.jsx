@@ -26,7 +26,7 @@ const Main = () => {
           <div className={styles.redBlock}>
             <span className={styles.blockTitle}>F1 Women Academy</span> - Discover the women shaping the future of Formula 1 through the F1 Women Academy, where you will find stories of emerging talent, and insights into this path for women in racing.
             <div className={styles.arrowContainer}> 
-             <Link to="/speedQueens">
+             <Link to="/f1wa">
              <img src={arrow} alt="Arrow" className={styles.arrow} />
             </Link>
           </div>

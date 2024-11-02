@@ -61,13 +61,16 @@
   }
   
   .infoSection h2 {
-    color: #e62429;
-    margin-bottom: 20px;
+    color: #ac1217;
+    margin-bottom: 30px;
+    margin-left: 400px;
+    font-size: 30px;
   }
   
   .infoSection ol {
     list-style-position: inside;
     line-height: 1.8;
+
   }
 
   .professionalsSection {
@@ -81,6 +84,7 @@
     text-align: center;
     margin-bottom: 20px;
     color: #b50000; 
+    margin-left: 100px;
   }
   
   .professionalsList {
@@ -97,7 +101,7 @@
     margin: 10px 0;
     width: 80%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: transform 0.3s;
     
   }
   
@@ -106,7 +110,7 @@
   }
   
   .professionalCard h3 {
-    color: #333;
+    color: #9a1818;
   }
   
   .professionalCard h4 {

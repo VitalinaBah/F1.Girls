@@ -1,27 +1,28 @@
-.mainContainer{
-    background-image: url('../../../assets/f1\ w.a.\ background.png') ;
+.mainContainer {
+    background-image: url('../../../assets/f1 w.a. background.png');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     height: 100vh;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     color: white;
 }
 
-.title{
+.title {
     color: rgb(151, 12, 12);
     margin-top: 20px;
     font-size: 60px;
 }
+
 .context {
-    
     box-sizing: border-box;
     display: flex;
+    flex-direction: column; /* Додаємо цю лінію */
     justify-content: center;
     align-items: center;
-    height: 50vh; 
+    height: 50vh;
     padding: 10px;
 }
 
@@ -30,24 +31,24 @@
     font-size: 20px;
     text-align: center;
     line-height: 1.6;
-    max-width: 1400px; 
-    margin-bottom: 200px;
+    max-width: 1400px;
+    margin-bottom: 20px; /* Зменшено, щоб кнопка не була занадто далеко */
 }
 
-.learnMoreButton{
-        background-color: #880f0f;
-        color: #fff;
-        border: none;
-        padding: 15px 40px;
-        font-size: 1.2em; 
-        border-radius: 25px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        margin-top: 20px;
-        text-align: center;
-        position:absolute;
-      
+.learnMoreButton {
+    background-color: #880f0f;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px; /* Залишити для відступу між текстом та кнопкою */
+    text-align: center;
+    position: relative; /* Залишити, якщо не потрібно абсолютне позиціонування */
 }
+
 .learnMoreButton:hover {
     background-color: #f6efefc2;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import MainImg from '../../../assets/main.png';
 import Header from '../Header/Header'
@@ -13,7 +14,7 @@ const Main = () => {
           <div className={styles.leftContainer}>
             <h1>For girls with passion for speed</h1>
             <p>Join and discover the community of fierce women who live for the thrill of Formula 1</p>
-            <button className={styles.joinButton}>Join us</button>
+            <Link to="/signup"><button className={styles.joinButton}>Join us</button></Link>
           </div>
           <div className={styles.rigthContainer}>
             <img src={MainImg} className={styles.imgStyles} alt="Main Visual" />

@@ -9,7 +9,7 @@ const Main = () => {
         <Header />
         <div className={styles.mainContainer}>
           <div>
-            <h1 className={styles.title}>F1 Women Academy</h1>
+            <h1 className={styles.title}>F1 Women</h1>
           </div>
           <div className={styles.context}>
             <p>Explore the F1 Women Academy, where the next generation of female talent is training to excel in motorsport. From drivers to engineers, these young women are breaking barriers and shaping the future of Formula 1 with their passion and determination</p>

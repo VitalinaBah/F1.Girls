@@ -21,15 +21,19 @@ const Main = () => {
           <option>Ferrari</option>
           <option>Red Bull</option>
           <option>Mercedes</option>
-          {/* Add more teams as options */}
+          <option>Mclaren</option>
+          <option>Williams</option>
+          <option>Haas</option>
+          <option>Alpine</option>
+          <option>Racing Bulls</option>
+          <option>Sauber</option>
         </select>
         
         <select className={styles.inputField}>
           <option>Choose your status</option>
           <option>Fan</option>
-          <option>Member</option>
-          <option>VIP</option>
-          {/* Add more statuses as options */}
+          <option>Member of F1 team</option>
+          <option>Other</option>
         </select>
 
         <button className={styles.signUpButton}>Sign up</button>

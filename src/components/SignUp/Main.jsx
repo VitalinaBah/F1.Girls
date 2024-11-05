@@ -99,6 +99,8 @@ const SignUpPage = () => {
         <button className={styles.signUpButton} onClick={handleSignUp} disabled={loading}>
           {loading ? "Signing up..." : "Sign up"}
         </button>
+        <p>Already signed in?</p>
+        <p>Log in entering only email an password</p>
         <button className={styles.logInButton} onClick={handleLogIn} disabled={loading}>
           {loading ? "Logging in..." : "Log in"}
         </button>

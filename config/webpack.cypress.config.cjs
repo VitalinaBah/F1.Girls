@@ -1,5 +1,5 @@
 const { merge } = require('webpack-merge');
-const basicConfig = require('./webpack.config');
+const basicConfig = require('./webpack.config.cjs');
 
 const config = {
     mode: 'development',

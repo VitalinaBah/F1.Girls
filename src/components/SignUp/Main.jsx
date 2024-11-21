@@ -42,7 +42,7 @@ const SignUpPage = () => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.formContainer}>
-        <div className={styles.logo}>
+        <div data-testid="logo" className={styles.logo}>
           <img src={logo} alt="Logo" className={styles.logoImage} />
         </div>
 
@@ -96,12 +96,12 @@ const SignUpPage = () => {
           <option>Other</option>
         </select>
 
-        <button className={styles.signUpButton} onClick={handleSignUp} disabled={loading}>
+        <button type="submit" className={styles.signUpButton} onClick={handleSignUp} disabled={loading}>
           {loading ? "Signing up..." : "Sign up"}
         </button>
         <p>Already signed in?</p>
         <p>Log in entering only email an password</p>
-        <button className={styles.logInButton} onClick={handleLogIn} disabled={loading}>
+        <button type="login" className={styles.logInButton} onClick={handleLogIn} disabled={loading}>
           {loading ? "Logging in..." : "Log in"}
         </button>
         {error && <p className={styles.errorMessage}>{error}</p>}

@@ -20,7 +20,7 @@
 .title {
     font-size: 80px;
     font-weight: bold;
-    color: green;
+    color: rgb(179, 7, 4);
     margin-top: 50px;
     text-align: left; /* Вирівнювання тексту вліво */
     margin-right: 900px; /* Додаємо відступ зліва для позиціонування */

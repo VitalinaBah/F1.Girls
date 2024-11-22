@@ -16,26 +16,26 @@ const SignUpPage = () => {
   const navigate = useNavigate();
 
   const handleSignUp = async () => {
-    setLoading(true); // Встановлюємо завантаження
+    setLoading(true); 
     try {
       await signUp(email, password);
       navigate("/discover");
     } catch (error_) {
       setError(error_.message);
     } finally {
-      setLoading(false); // Завершуємо завантаження
+      setLoading(false); 
     }
   };
 
   const handleLogIn = async () => {
-    setLoading(true); // Встановлюємо завантаження
+    setLoading(true); 
     try {
       await logIn(email, password);
       navigate("/discover");
     } catch (error_) {
       setError(error_.message);
     } finally {
-      setLoading(false); // Завершуємо завантаження
+      setLoading(false); 
     }
   };
 

@@ -21,7 +21,7 @@ describe('Sign Up Page', () => {
   it('should register a user successfully with valid inputs', () => {
       // Заповнення полів правильною інформацією
       cy.get('input[placeholder="Enter your name"]').type('Valid User');
-      cy.get('input[placeholder="Email"]').type('valuser@gmail.com');
+      cy.get('input[placeholder="Email"]').type('valuse@gmail.com');
       cy.get('input[placeholder="Password"]').type('password123');
 
       // Клік на кнопку реєстрації
@@ -31,16 +31,5 @@ describe('Sign Up Page', () => {
       cy.url().should('include', '/discover'); 
   });
 
-  it('should register a user successfully with valid inputs', () => {
-    // Заповнення полів правильною інформацією
-    cy.get('input[placeholder="Enter your name"]').type('Valid User');
-    cy.get('input[placeholder="Email"]').type('valuser@gmail.com');
-    cy.get('input[placeholder="Password"]').type('password123');
-
-    // Клік на кнопку реєстрації
-    cy.get('button[type="login"]').click();
-
-    // Перевірка успішної реєстрації 
-    cy.url().should('include', '/discover'); 
-});
+  
 });

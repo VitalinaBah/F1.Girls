@@ -30,6 +30,14 @@ const basicConfig = {
                     },
                 ],
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i, // Додаємо лоадер для зображень
+                type: 'asset/resource', // Для Webpack 5
+            },
+            {
+                test: /\.svg$/i,
+                type: 'asset/inline', // Для SVG (можна вбудувати в код)
+            },
         ],
     },
     resolve: {

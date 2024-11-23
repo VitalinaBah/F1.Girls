@@ -1,32 +1,44 @@
+import { mount } from 'cypress/react';
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 
-import Home from '../../pages/Home';
+import Main from './Main';
+import styles from './Main.css';
 
+describe('<Main />', () => {
+    it('рендерить головний контейнер з класом main', () => {
+        mount(
+            <MemoryRouter>
+                <Main />
+            </MemoryRouter>
+        );
+        cy.get(`.${styles.main}`).should('exist');
+    });
 
-describe('Тести компоненту SignUp', () => {
-  beforeEach(() => {
-      cy.mount(
-          <MemoryRouter>
-              <Home />
-          </MemoryRouter>
-      );
-  });
+    it('рендерить заголовок з текстом "For girls with passion for speed"', () => {
+        mount(
+            <MemoryRouter>
+                <Main />
+            </MemoryRouter>
+        );
+        cy.contains('h1', 'For girls with passion for speed').should('exist');
+    });
 
-  it('повинен завантажити сторінку коректно', () => {
-      cy.get('header').should('be.visible');
-      cy.get('.main').should('be.visible'); 
-      cy.get('.nav').should('be.visible'); 
-  });
+    it('рендерить кнопку з класом joinButton', () => {
+        mount(
+            <MemoryRouter>
+                <Main />
+            </MemoryRouter>
+        );
+        cy.get(`.${styles.joinButton}`).should('exist');
+    });
 
-  it('повинен мати правильну навігацію', () => {
-      cy.get('.nav a').contains('Home').should('have.attr', 'href', '/');
-      cy.get('.nav a').contains('Discover').should('have.attr', 'href', '/discover');
-      cy.get('.nav a').contains('Speed Queens').should('have.attr', 'href', '/speedQueens');
-  });
-
-  it('повинен мати кнопку для переходу до реєстрації', () => {
-      cy.url().should('include', '/signUp'); 
-  });
-
+    it('рендерить зображення з класом imgStyles', () => {
+        mount(
+            <MemoryRouter>
+                <Main />
+            </MemoryRouter>
+        );
+        cy.get(`.${styles.imgStyles}`).should('exist');
+    });
 });
